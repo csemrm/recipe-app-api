@@ -27,7 +27,7 @@ services:
   db:
     image: postgres:alpine3.18
     volumes:
-      - dev-db-data:/var/lib/postgres/data
+      - dev-db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
