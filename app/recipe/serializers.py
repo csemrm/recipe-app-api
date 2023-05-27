@@ -97,6 +97,7 @@ class RecipeDetailSerializer(RecipeSerializer):
 
 class RecipeImageSerializer(serializers.ModelSerializer):
     """serializer for uploading image to the recipe."""
+
     class Meta:
         model = Recipe
         fields = ['id', 'image']
